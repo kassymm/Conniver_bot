@@ -3,7 +3,7 @@ from aiogram import Bot, Dispatcher, executor
 import os
 from handlers.handlers import send_welcome, tts, echo
 import json
-load_dotenv()
+load_dotenv(dotenv_path=".venv/.env")
 
 
 ID = os.getenv("ID")
