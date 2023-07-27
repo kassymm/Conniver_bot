@@ -3,7 +3,7 @@ import requests
 import os
 
 
-load_dotenv(dotenv_path=".venv/.env")
+load_dotenv()
 ID = os.getenv("ID")
 API_KEY = os.getenv("API_KEY")
 
