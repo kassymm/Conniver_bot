@@ -3,7 +3,7 @@ from aiogram import Bot, Dispatcher, executor
 import os
 from handlers.handlers import send_welcome, tts, echo
 import json
-load_dotenv()
+load_dotenv(dotenv_path='.venv/.env')
 
 
 ID = os.getenv("ID")
@@ -32,7 +32,7 @@ dp.register_message_handler(echo)
 
 menu = ['Start', 'Text to speech']
 
-bot.set_chat_menu_button(menu_button=json.dumps(menu))
+# bot.set_chat_menu_button(menu_button=json.dumps(menu))
 
 
 if __name__ == "__main__":

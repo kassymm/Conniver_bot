@@ -2,7 +2,8 @@ from aiogram import types
 from utils.utils import convert, path_to_audio
 from services.services import post_audio, get_audio
 import time
-import asyncio
+# import asyncio
+
 
 async def send_welcome(message: types.Message):
     """
